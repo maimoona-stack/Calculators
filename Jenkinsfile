@@ -8,17 +8,17 @@ pipeline {
     }
     stage('compile') {
       steps {
-        sh 'javac Calculator.java'
+        sh 'javac Calculators.java'
       }
     }
     stage('build') {
       steps {
-        sh 'java Calculator 25 5'
+        sh 'java Calculators 25 5'
       }
     }
     stage('test') {
       steps {
-        sh 'java Calculator 30 -5'
+        sh 'java Calculators 30 -5'
       }
     }
     stage('deploy'){
