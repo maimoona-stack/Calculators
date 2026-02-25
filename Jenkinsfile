@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('clone') {
+    stage('Clone') {
       steps {
-        git branch:'main', url: 'https://github.com/maimoona-stack/Calculators.git’;
+        git branch:'main', url: 'https://github.com/maimoona-stack/Calculators.git’
       }
     }
     stage('compile') {
